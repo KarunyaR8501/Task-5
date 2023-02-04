@@ -1,5 +1,5 @@
 1)Print odd numbers in an array
-anonymous  :  function(array){
+Anonymous  :  function(array){
                   for(var i = 0 ; i< array.length ; i++){
                         if(array[i]%2!=0){
                            console.log(array[i])
@@ -22,9 +22,9 @@ Arrow Function    oddNumbers = (array) => {
                    }
                         }
                         
-   2)Convert all the strings to title caps in a string array
+2)Convert all the strings to title caps in a string array
    
- anonymous :   function (str) {
+ Anonymous :   function (str) {
                     str = str.toLowerCase().split(' ');
                     for (var i = 0; i < str.length; i++) {
                       str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
@@ -46,7 +46,7 @@ IIFE : (function (str) {
                     return str.join(' ');
                   }  
 3)Sum of all numbers in an array 
-anonymous  :  function(array){
+Anonymous  :  function(array){
                   var sum = 0;
                   for(var i = 0 ; i< array.length ; i++){
                      sum = sum + array[i];
@@ -200,4 +200,23 @@ Anonymous function : function(array , k){
                             reverse(a, a.length - k, a.length - 1);
                             reverse(a, 0, a.length - 1);
                           })([1,2,3,4] , 2)
-                          
+ 8.Return median of two sorted arrays of the same size.
+ Anonymous : function(arr) {
+               const mid = Math.floor(arr.length / 2),
+                 nums = [...arr].sort((a, b) => a - b);
+                  return arr.length % 2 !== 0 ? nums[mid] : (nums[mid - 1] + nums[mid]) / 2;
+             };
+
+ IIFE : (function(arr) {
+               const mid = Math.floor(arr.length / 2),
+                nums = [...arr].sort((a, b) => a - b);                 
+                  return arr.length % 2 !== 0 ? nums[mid] : (nums[mid - 1] + nums[mid]) / 2;
+                  
+              })([5, 6, 50, 1, -5])
+
+
+
+
+
+
+
