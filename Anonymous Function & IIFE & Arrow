@@ -1,4 +1,5 @@
 1)Print odd numbers in an array
+
 Anonymous  :  function(array){
                   for(var i = 0 ; i< array.length ; i++){
                         if(array[i]%2!=0){
@@ -46,6 +47,7 @@ IIFE : (function (str) {
                     return str.join(' ');
                   }  
 3)Sum of all numbers in an array 
+
 Anonymous  :  function(array){
                   var sum = 0;
                   for(var i = 0 ; i< array.length ; i++){
@@ -68,6 +70,7 @@ Arrow:       sum = (array)=>{
                    return sum;
                    }
 4)Return all the prime numbers in an array
+
     Anonymous Function:
                  function(numArray){
                       numArray = numArray.filter((number) => {
@@ -157,6 +160,7 @@ Palindrome = (arr, n) =>
         return true;
     }
 6.Remove duplicates from an Array
+
 Anonymous Function : function(array){
                         let dup = [...new Set(array)];
                         console.log(dup);
@@ -201,6 +205,7 @@ Anonymous function : function(array , k){
                             reverse(a, 0, a.length - 1);
                           })([1,2,3,4] , 2)
  8.Return median of two sorted arrays of the same size.
+ 
  Anonymous : function(arr) {
                const mid = Math.floor(arr.length / 2),
                  nums = [...arr].sort((a, b) => a - b);
